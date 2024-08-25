@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimapharm - Login/Signup</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; color: #333;">
+
+    <!-- Header -->
+    <div style="background-color: #1E1E1E; padding: 20px; text-align: center;">
+        <img src="assets/logo.png" alt="Dimapharm Logo" style="width: 100px; height: auto;">
+        <h1 style="color: #fff; margin: 10px 0;">Login/Signup</h1>
+    </div>
+
+    <!-- Auth Content -->
+    <div style="padding: 20px;">
+        <h2>Login</h2>
+        <form onsubmit="return handleLogin()" style="max-width: 400px; margin: auto;">
+            <input id="username" type="text" placeholder="Username" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+            <input id="password" type="password" placeholder="Password" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+            <button type="submit" style="background-color: #04a; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Login</button>
+        </form>
+
+        <h2 style="margin-top: 50px;">Signup</h2>
+        <form onsubmit="return handleSignup()" style="max-width: 400px; margin: auto;">
+            <input id="new-username" type="text" placeholder="Username" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+            <input id="new-password" type="password" placeholder="Password" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+            <button type="submit" style="background-color: #04a; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Signup</button>
+        </form>
+    </div>
+
+    <script src="script/auth.js"></script>
+</body>
+</html>
